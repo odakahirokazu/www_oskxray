@@ -4,12 +4,15 @@
     <meta name="author" content="ODAKA, Hirokazu" />
     <meta name="copyright" content="Copyright (c) 2008-2023 ODAKA Hirokazu" />
     <meta charset="UTF-8" />
+    <script type="importmap">
+      {"imports": {"vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js" }}
+    </script>
     <link rel="stylesheet" href="./design.css" type="text/css" />
     <title>X-ray Astronomy Group at Osaka Univeristy</title>
   </head>
   <body>
     <header>
-      <nav class="top_bar">
+      <nav class="top-bar">
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./research.html">Research</a></li>
@@ -23,13 +26,13 @@
 
     <div id="home">
       <h1>大阪大学 大学院理学研究科<br />&alpha;線天文学グループ<br /> (この枠にトップ画像がきます)</h1>
-      <main id="home_main">
+      <main id="home-main">
         <p>リード文。このページはテストです。宇宙はとても面白いです。云々</p>
       </main>
-      <section id="home_news">
+      <section id="home-news">
         <h2>News</h2>
-        <div id="app_news">
-          <div v-for="item in news_list.slice(0, home_news_capacity)" class="news_item">
+        <div id="app-news">
+          <div v-for="item in news_list.slice(0, home_news_capacity)" class="news-item">
             <h3>{{ item.date }} | {{ item.title }}</h3>
             <p v-html="item.article"></p>
           </div>

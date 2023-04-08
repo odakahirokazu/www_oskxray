@@ -1,4 +1,4 @@
-import { createApp } from "https://unpkg.com/vue@3.2.4/dist/vue.esm-browser.prod.js";
+import { createApp } from 'vue';
 
 const app = createApp({
   data() {
@@ -8,8 +8,8 @@ const app = createApp({
     };
   },
   mounted() {
-    this.home_news_capacity = 10;
+    this.home_news_capacity = 8;
   }
 });
 
-app.mount("#app_news");
+app.mount("#app-news");
