@@ -106,6 +106,28 @@ div.table-of-contents p{
     font-size: 90%;
 }
 
+table {
+    border-collapse:  collapse;
+    width: 100%;
+}
+
+th,td {
+    border: solid 1px;
+    padding: 4px;
+}
+
+col.table-time {
+    width: 10%;
+}
+
+col.table-name {
+    width: 20%;
+}
+
+col.table-title {
+    width: 80%;
+}
+
 a:link {
     color: var(--link-color);
     text-decoration: none;
